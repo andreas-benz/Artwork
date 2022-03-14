@@ -45,6 +45,8 @@ const sketch = ({ context, width, height }) => {
       agent.update();
       agent.draw(context);
       agent.bounce(width, height);
+      //option to wrap instead of bounce when reaching canvas boundery:
+      // agent.wrap(width, height)
     });
   };
 };
@@ -72,11 +74,15 @@ class Agent {
     this.radius = random.range(4, 12);
   }
 
-bounce(width, height) {
-  if (this.pos.x <= 0 || this.pos.x >= width) this.vel.x *= -1;
-  if (this.pos.y <= 0 || this.pos.y >= height) this.vel.y *= -1;
+  bounce(width, height) {
+    if (this.pos.x <= 0 || this.pos.x >= width) this.vel.x *= -1;
+    if (this.pos.y <= 0 || this.pos.y >= height) this.vel.y *= -1;
+  }
 
-}
+  wrap (width, height) {
+    if (this.pos.x <= 0 || this.pos.x >= width) this.pos.x = Math.abs(this.pos.x - width);
+    if (this.pos.y <= 0 || this.pos.y >= height) this.pos.y = Math.abs(this.pos.y - height);
+  }
 
   update() {
     this.pos.x += this.vel.x;
