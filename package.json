@@ -1,10 +1,26 @@
 {
   "name": "sketches",
   "version": "1.0.0",
-  "main": "sketch-01.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+    "start": "run-p client server",
+    "dev": "run-p client:watch server",
+    "client": "webpack --config ./client/webpack.config.js",
+    "client:watch": "webpack  --config ./client/webpack.config.js --watch",
+    "server": "node server",
+    "lint": "eslint ."
+
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -14,7 +30,8 @@
     "babel-preset-react-app": "^3.1.2",
     "canvas-sketch": "^0.7.5",
     "canvas-sketch-util": "^1.10.0",
-    "tweakpane": "^3.0.7"
+    "tweakpane": "^3.0.7",
+    "express": "^4.17.2"
   },
   "repository": {
     "type": "git",
@@ -26,9 +43,22 @@
   "homepage": "https://github.com/andreas-benz/Artwork#readme",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "7.9.0",
+    "eslint-config-eda": "0.1.4",
+    "jest": "^26.6.1",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.1",
     "webpack-cli": "^4.9.2"
-  },
-  "engines": {
-    "node": "16.x"
   }
 }
