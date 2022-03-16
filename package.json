@@ -1,7 +1,6 @@
 {
   "name": "sketches",
   "version": "1.0.0",
-  "description": "",
   "main": "sketch-01.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +9,25 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "canvas-sketch": "^0.7.5",
     "canvas-sketch-util": "^1.10.0",
     "tweakpane": "^3.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreas-benz/Artwork.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreas-benz/Artwork/issues"
+  },
+  "homepage": "https://github.com/andreas-benz/Artwork#readme",
+  "description": "",
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }

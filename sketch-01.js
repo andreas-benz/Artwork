@@ -1,4 +1,5 @@
 const canvasSketch = require('canvas-sketch');
+// import canvasSketch from 'canvas-sketch';
 
 const settings = {
   dimensions: [ 1000, 1000 ]
@@ -19,8 +20,6 @@ const sketch = () => {
     const iy = height * 0.17;
 
     const off = width * 0.02;
-
-    
 
     let x, y;
     
@@ -46,5 +45,9 @@ const sketch = () => {
 };
 
 
-
 canvasSketch(sketch, settings);
+
+// module.exports = {
+//   sketch,
+//   settings,
+//  }
