@@ -46,6 +46,42 @@ function Home () {
       </div>
     </div>
 
+    <h2>Moving Dots</h2>
+    <div className="grid-container">
+      <div className="grid-item">
+        <video src="/artpics/03/2022.03.14-16.19.34.mp4" autoPlay muted loop width="200" height="200" />
+        <br></br>
+        <button><Link to={`/03`}>configure your own artwork</Link></button>
+      </div>
+      <div className="grid-item">
+        <img src="/artpics/03/2022.03.14-16.18.47.png" width="200" height="200" />
+      </div>
+      <div className="grid-item">
+        <img src="/artpics/03/2022.03.14-16.19.01.png" width="200" height="200" />
+      </div>
+      <div className="grid-item">
+        <img src="/artpics/03/2022.03.19-18.59.32.png" width="200" height="200" />
+      </div>
+    </div>
+
+    <h2>Noise</h2>
+    <div className="grid-container">
+      <div className="grid-item">
+        <video src="/artpics/03/2022.03.14-16.19.34.mp4" autoPlay muted loop width="200" height="200" />
+        <br></br>
+        <button><Link to={`/03`}>configure your own artwork</Link></button>
+      </div>
+      <div className="grid-item">
+        <img src="/artpics/03/2022.03.14-16.18.47.png" width="200" height="200" />
+      </div>
+      <div className="grid-item">
+        <img src="/artpics/03/2022.03.14-16.19.01.png" width="200" height="200" />
+      </div>
+      <div className="grid-item">
+        <img src="/artpics/03/2022.03.19-18.59.32.png" width="200" height="200" />
+      </div>
+    </div>
+
 
 
 {/* 
