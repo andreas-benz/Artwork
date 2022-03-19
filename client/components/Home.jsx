@@ -1,11 +1,6 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { Link } from "react-router-dom"
-import canvasSketch from "canvas-sketch";
 
-import Art01 from './Art01'
-import Art02 from './Art02'
-import Art03 from './Art03'
-import Art04 from './Art04'
 
 function Home () {
 

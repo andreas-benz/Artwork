@@ -114,7 +114,11 @@ function Art03 () {
   }, [ref]);
     
   return (
-    <canvas ref={ref} />
+    <div className="grid-item">
+      <h1>Moving Dots</h1>
+      <br></br>
+      <canvas ref={ref} />
+    </div>
   )
 }
 

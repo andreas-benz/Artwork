@@ -202,9 +202,20 @@ function Art01() {
       canvas: ref.current
     }));
   }, [ref]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("canvas", {
+
+  var shuffle = function shuffle() {
+    canvas_sketch__WEBPACK_IMPORTED_MODULE_1___default()(sketch, _objectSpread(_objectSpread({}, settings), {}, {
+      canvas: ref.current
+    }));
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "grid-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "The Square"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("canvas", {
     ref: ref
-  });
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: shuffle
+  }, "shuffle"));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Art01);
@@ -300,9 +311,20 @@ function Art02() {
       canvas: ref.current
     }));
   }, [ref]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("canvas", {
+
+  var shuffle = function shuffle() {
+    canvas_sketch__WEBPACK_IMPORTED_MODULE_1___default()(sketch, _objectSpread(_objectSpread({}, settings), {}, {
+      canvas: ref.current
+    }));
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "grid-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "The Circle"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("canvas", {
     ref: ref
-  });
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    onClick: shuffle
+  }, "shuffle"));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Art02);
@@ -462,9 +484,11 @@ function Art03() {
       canvas: ref.current
     }));
   }, [ref]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("canvas", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "grid-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Moving Dots"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("canvas", {
     ref: ref
-  });
+  }));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Art03);
@@ -620,9 +644,11 @@ function Art04() {
     }));
     createPane();
   }, [ref]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("canvas", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "grid-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Noise"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("canvas", {
     ref: ref
-  });
+  }));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Art04);
@@ -641,17 +667,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-/* harmony import */ var canvas_sketch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! canvas-sketch */ "./node_modules/canvas-sketch/dist/canvas-sketch.umd.js");
-/* harmony import */ var canvas_sketch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(canvas_sketch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Art01__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Art01 */ "./client/components/Art01.jsx");
-/* harmony import */ var _Art02__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Art02 */ "./client/components/Art02.jsx");
-/* harmony import */ var _Art03__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Art03 */ "./client/components/Art03.jsx");
-/* harmony import */ var _Art04__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Art04 */ "./client/components/Art04.jsx");
-
-
-
-
-
 
 
 

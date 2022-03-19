@@ -46,16 +46,28 @@ function Art01 () {
   };
 
   const ref = React.createRef();
+  
   useEffect(() => {
     canvasSketch(sketch, {
       ...settings,
       canvas: ref.current
     });
   }, [ref]);
-    
+  
+  const shuffle = () => {
+    canvasSketch(sketch, {
+      ...settings,
+      canvas: ref.current
+    });
+  }
  
   return (
-    <canvas ref={ref} />
+    <div className="grid-item">
+      <h1>The Square</h1>
+      <canvas ref={ref} />
+      <br></br>
+      <button onClick={shuffle}>shuffle</button>
+    </div>
   )
 }
 

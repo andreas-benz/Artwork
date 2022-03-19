@@ -106,7 +106,11 @@ function Art04 () {
   }, [ref]);
     
   return (
-    <canvas ref={ref} />
+    <div className="grid-item">
+      <h1>Noise</h1>
+      <br></br>
+      <canvas ref={ref} />
+    </div>
   )
 }
 
