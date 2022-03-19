@@ -1,12 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from "react-router-dom"
+import canvasSketch from "canvas-sketch";
 
 import Art01 from './Art01'
 import Art02 from './Art02'
 import Art03 from './Art03'
 import Art04 from './Art04'
 
-function Home () {  
+function Home () {
+
   return (
     <>
     <h1>Interactive Art Gallery</h1>
@@ -85,15 +87,6 @@ function Home () {
         <video src="/artpics/04/2022.03.19-19.33.49.mp4" autoPlay muted loop />
       </div> */}
     </div>
-
-
-
-{/* 
-    <Art04 />
-    <Art01 />
-    <Art02 />
-    <Art03 /> */}
-
     </>
   )
 }

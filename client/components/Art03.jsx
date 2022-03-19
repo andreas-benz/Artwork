@@ -53,9 +53,7 @@ function Art03 () {
       });
     };
   };
-  
-  canvasSketch(sketch, settings);
-  
+    
   class Vector {
     constructor(x,y) {
       this.x = x;
@@ -66,7 +64,6 @@ function Art03 () {
       const dx = this.x - v.x;
       const dy = this.y - v.y;
       return Math.sqrt(dx * dx + dy * dy);
-  
     }
   }
   
@@ -92,7 +89,6 @@ function Art03 () {
       this.pos.y += this.vel.y
     }
     
-  
     draw(context) {
       context.save();
       context.translate(this.pos.x, this.pos.y);
@@ -108,17 +104,18 @@ function Art03 () {
     }
   }
 
-  // const Sketch = () => {
-    const ref = React.createRef();
-    useEffect(() => {
-      canvasSketch(sketch, {
-        ...settings,
-        canvas: ref.current
-      });
-    }, [ref]);
+ 
+  const ref = React.createRef();
+  useEffect(() => {
+    canvasSketch(sketch, {
+      ...settings,
+      canvas: ref.current
+    });
+  }, [ref]);
     
-  // };
-  return <canvas ref={ref} />;
+  return (
+    <canvas ref={ref} />
+  )
 }
 
 export default Art03

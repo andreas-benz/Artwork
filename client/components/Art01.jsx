@@ -14,7 +14,6 @@ function Art01 () {
       context.lineWidth = width * 0.01;
       context.strokeStyle = "white"
   
-      
       const w = width * 0.1;
       const h = height * 0.1;
       const gap = width * 0.03;
@@ -46,17 +45,18 @@ function Art01 () {
     };
   };
 
-  // const Sketch = () => {
-    const ref = React.createRef();
-    useEffect(() => {
-      canvasSketch(sketch, {
-        ...settings,
-        canvas: ref.current
-      });
-    }, [ref]);
+  const ref = React.createRef();
+  useEffect(() => {
+    canvasSketch(sketch, {
+      ...settings,
+      canvas: ref.current
+    });
+  }, [ref]);
     
-  // };
-  return <canvas ref={ref} />;
+ 
+  return (
+    <canvas ref={ref} />
+  )
 }
 
 export default Art01

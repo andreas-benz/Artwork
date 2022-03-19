@@ -72,19 +72,17 @@ function Art02 () {
     };
   };
 
-  canvasSketch(sketch, settings);
-
-  // const Sketch = () => {
-    const ref = React.createRef();
-    useEffect(() => {
-      canvasSketch(sketch, {
-        ...settings,
-        canvas: ref.current
-      });
-    }, [ref]);
+  const ref = React.createRef();
+  useEffect(() => {
+    canvasSketch(sketch, {
+      ...settings,
+      canvas: ref.current
+    });
+  }, [ref]);
     
-  // };
-  return <canvas ref={ref} />;
+  return (
+    <canvas ref={ref} />
+  )
 }
 
 export default Art02

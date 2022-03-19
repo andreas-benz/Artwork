@@ -93,24 +93,21 @@ function Art04 () {
     folder.addInput(params, 'amp', { min: 0, max: 1 });
     folder.addInput(params, 'animate');
     folder.addInput(params, 'frame', {min: 0, max: 999});
-  
-  
   };
-  
-  createPane();
-  canvasSketch(sketch, settings);
 
-  // const Sketch = () => {
-    const ref = React.createRef();
-    useEffect(() => {
-      canvasSketch(sketch, {
-        ...settings,
-        canvas: ref.current
-      });
-    }, [ref]);
+  const ref = React.useRef();
+  
+  useEffect(() => {
+    canvasSketch(sketch, {
+      ...settings,
+      canvas: ref.current
+    });
+    createPane();
+  }, [ref]);
     
-  // };
-  return <canvas ref={ref} />;
+  return (
+    <canvas ref={ref} />
+  )
 }
 
 export default Art04
