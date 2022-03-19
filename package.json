@@ -10,7 +10,6 @@
     "client:watch": "webpack  --config ./client/webpack.config.js --watch",
     "server": "node server",
     "lint": "eslint ."
-
   },
   "babel": {
     "presets": [
@@ -30,8 +29,9 @@
     "babel-preset-react-app": "^3.1.2",
     "canvas-sketch": "^0.7.5",
     "canvas-sketch-util": "^1.10.0",
-    "tweakpane": "^3.0.7",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "react-bootstrap": "^2.2.1",
+    "tweakpane": "^3.0.7"
   },
   "repository": {
     "type": "git",
@@ -58,11 +58,11 @@
     "npm-run-all": "^4.1.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^6.2.1",
     "webpack": "^4.44.1",
-    "webpack-cli": "^4.9.2",
-    "react-router-dom": "^6.2.1"
+    "webpack-cli": "^4.9.2"
   },
   "engines": {
     "node": "16.x"
-}
+  }
 }

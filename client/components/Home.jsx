@@ -13,73 +13,77 @@ function Home () {
     <h2>Square</h2>
     <div className="grid-container">
       <div className="grid-item">
-        <img src="/artpics/01/2022.03.12-14.16.31.png" width="200" height="200" />
+        <img src="/artpics/01/2022.03.12-14.16.31.png" />
         <br></br>
         <button><Link to={`/01`}>configure your own artwork</Link></button>
       </div>
       <div className="grid-item">
-        <img src="/artpics/01/2022.03.12-13.37.06.png" width="200" height="200" />
+        <img src="/artpics/01/2022.03.12-13.37.06.png"/>
       </div>
       <div className="grid-item">
-        <img src="/artpics/01/2022.03.12-13.46.27.png" width="200" height="200" />
+        <img src="/artpics/01/2022.03.12-13.46.27.png" />
       </div>
       <div className="grid-item">
-        <img src="/artpics/01/2022.03.12-14.16.31.png" width="200" height="200" />
+        <img src="/artpics/01/2022.03.12-14.16.31.png" />
       </div>
     </div>
 
     <h2>Circle</h2>
     <div className="grid-container">
       <div className="grid-item">
-        <img src="/artpics/02/2022.03.12-18.21.51.png" width="200" height="200" />
+        <img src="/artpics/02/2022.03.12-18.21.51.png" />
         <br></br>
         <button><Link to={`/02`}>configure your own artwork</Link></button>
       </div>
       <div className="grid-item">
-        <img src="/artpics/02/2022.03.19-18.40.47.png" width="200" height="200" />
+        <img src="/artpics/02/2022.03.19-18.40.47.png" />
       </div>
       <div className="grid-item">
-        <img src="/artpics/02/2022.03.19-18.42.03.png" width="200" height="200" />
+        <img src="/artpics/02/2022.03.19-18.42.03.png" />
       </div>
       <div className="grid-item">
-        <img src="/artpics/02/2022.03.19-18.42.04.png" width="200" height="200" />
+        <img src="/artpics/02/2022.03.19-18.42.04.png" />
       </div>
     </div>
 
     <h2>Moving Dots</h2>
     <div className="grid-container">
       <div className="grid-item">
-        <video src="/artpics/03/2022.03.14-16.19.34.mp4" autoPlay muted loop width="200" height="200" />
+        <video src="/artpics/03/2022.03.14-16.19.34.mp4" autoPlay muted loop />
         <br></br>
         <button><Link to={`/03`}>configure your own artwork</Link></button>
       </div>
       <div className="grid-item">
-        <img src="/artpics/03/2022.03.14-16.18.47.png" width="200" height="200" />
+        <img src="/artpics/03/2022.03.14-16.18.47.png" />
       </div>
       <div className="grid-item">
-        <img src="/artpics/03/2022.03.14-16.19.01.png" width="200" height="200" />
+        <img src="/artpics/03/2022.03.14-16.19.01.png" />
       </div>
       <div className="grid-item">
-        <img src="/artpics/03/2022.03.19-18.59.32.png" width="200" height="200" />
+        <img src="/artpics/03/2022.03.19-18.59.32.png" />
       </div>
     </div>
 
     <h2>Noise</h2>
     <div className="grid-container">
       <div className="grid-item">
-        <video src="/artpics/03/2022.03.14-16.19.34.mp4" autoPlay muted loop width="200" height="200" />
+        {/* <video src="/artpics/04/2022.03.19-19.28.32.mp4" autoPlay muted loop /> */}
+        <video src="/artpics/04/2022.03.19-19.28.32.mp4" autoPlay muted loop />
         <br></br>
-        <button><Link to={`/03`}>configure your own artwork</Link></button>
+        <button><Link to={`/04`}>configure your own artwork</Link></button>
       </div>
       <div className="grid-item">
-        <img src="/artpics/03/2022.03.14-16.18.47.png" width="200" height="200" />
+        <video src="/artpics/04/2022.03.19-19.29.21.mp4" autoPlay muted loop />
       </div>
       <div className="grid-item">
-        <img src="/artpics/03/2022.03.14-16.19.01.png" width="200" height="200" />
+        <video src="/artpics/04/2022.03.19-19.31.43.mp4" autoPlay muted loop />
       </div>
       <div className="grid-item">
-        <img src="/artpics/03/2022.03.19-18.59.32.png" width="200" height="200" />
+        <video src="/artpics/04/2022.03.19-19.33.04.mp4" autoPlay muted loop />
       </div>
+      {/* <div className="grid-item">
+        <video src="/artpics/04/2022.03.19-19.33.49.mp4" autoPlay muted loop />
+      </div> */}
     </div>
 
 
