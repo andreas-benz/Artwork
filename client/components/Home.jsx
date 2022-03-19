@@ -31,18 +31,18 @@ function Home () {
     <h2>Circle</h2>
     <div className="grid-container">
       <div className="grid-item">
-        <img src="/artpics/02/2022.03.12-18.21.51.png" />
+        <img src="/artpics/02/2022.03.19-18.40.47.png" />
         <br></br>
         <button><Link to={`/02`}>configure your own artwork</Link></button>
       </div>
       <div className="grid-item">
-        <img src="/artpics/02/2022.03.19-18.40.47.png" />
+        <img src="/artpics/02/2022.03.20-09.09.43.png" />
       </div>
       <div className="grid-item">
-        <img src="/artpics/02/2022.03.19-18.42.03.png" />
+        <img src="/artpics/02/2022.03.20-09.11.43.png" />
       </div>
       <div className="grid-item">
-        <img src="/artpics/02/2022.03.19-18.42.04.png" />
+        <img src="/artpics/02/2022.03.20-09.17.08.png" />
       </div>
     </div>
 
@@ -57,10 +57,10 @@ function Home () {
         <img src="/artpics/03/2022.03.14-16.18.47.png" />
       </div>
       <div className="grid-item">
-        <img src="/artpics/03/2022.03.14-16.19.01.png" />
+        <img src="/artpics/03/2022.03.20-09.32.55.gif" />
       </div>
       <div className="grid-item">
-        <img src="/artpics/03/2022.03.19-18.59.32.png" />
+        <img src="/artpics/03/2022.03.20-09.38.33.gif" />
       </div>
     </div>
 

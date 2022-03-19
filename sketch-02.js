@@ -16,10 +16,10 @@ const settings = {
 
 const sketch = () => {
   return ({ context, width, height }) => {
-    context.fillStyle = 'white';
+    context.fillStyle = 'red';
     context.fillRect(0, 0, width, height);
 
-    context.fillStyle = "black"
+    context.fillStyle = "white"
 
     const cx = width * 0.5;
     const cy = height * 0.5;
@@ -53,7 +53,7 @@ const sketch = () => {
       context.rect(-w * 0.5, random.range(0, -h * 0.5), w, h);
       context.fill();
       context.restore();
-
+      
       //arcs
       context.save();
       context.translate(cx, cy);
@@ -61,10 +61,10 @@ const sketch = () => {
 
       context.lineWidth = random.range(5, 20);
       context.beginPath();
-
       context.arc(0, 0, radius * random.range(0.7, 1.3), slice * random.range(1, -8), slice * random.range(1, 5));
       context.stroke();
       context.restore();
+      
     }
   };
 };
