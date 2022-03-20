@@ -37,11 +37,14 @@ button:hover {
     color: white;
 }
 
+.tp-rotv,
+.tp-clpv,
 .tp-dfwv {
-  position: relative;
-  top: 8px;
-  right: 8px;
-  width: 256px;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  /* margin: auto; */
+  --tp-base-background-color: black;
 }
 
 a:link { 

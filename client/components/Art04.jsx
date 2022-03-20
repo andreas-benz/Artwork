@@ -100,15 +100,14 @@ function Art04 () {
   useEffect(() => {
     canvasSketch(sketch, {
       ...settings,
-      canvas: ref.current
+      canvas: ref.current,
     });
-    createPane();
+    createPane()
   }, [ref]);
     
   return (
     <div className="grid-item">
       <h1>Noise</h1>
-      <br></br>
       <canvas ref={ref} />
     </div>
   )
