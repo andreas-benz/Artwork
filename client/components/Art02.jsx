@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import canvasSketch from "canvas-sketch";
 const math = require('canvas-sketch-util/math');
 const random = require('canvas-sketch-util/random');
+import {Button} from "@material-ui/core";
 
 function Art02 () {
 
@@ -92,7 +93,8 @@ function Art02 () {
       <h1>The Circle</h1>
       <canvas ref={ref} />
       <br></br>
-      <button onClick={shuffle}>shuffle</button>
+      <Button variant="contained" style={{backgroundColor: "#B388FF",}} onClick={shuffle}>shuffle</Button>
+
     </div>
   )
 }

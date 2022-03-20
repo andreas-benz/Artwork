@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import canvasSketch from "canvas-sketch";
+import {Button} from "@material-ui/core";
 
 function Art01 () {
 
@@ -66,7 +67,7 @@ function Art01 () {
       <h1>The Square</h1>
       <canvas ref={ref} />
       <br></br>
-      <button onClick={shuffle}>shuffle</button>
+      <Button variant="contained" style={{backgroundColor: "#B388FF",}} onClick={shuffle}>shuffle</Button>
     </div>
   )
 }
