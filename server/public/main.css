@@ -1,3 +1,7 @@
+h1 {
+  margin-left: 20px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -64,3 +68,4 @@ a:hover {
 a:active { 
   text-decoration: none;
 }
+

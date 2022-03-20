@@ -10,10 +10,11 @@ import {
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import DrawerComponent from "./Drawer"
+import { SortOutlined } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
-    marginLeft: theme.spacing(10),
+    marginLeft: theme.spacing(0),
     display: "flex",
   },
  logo: {
@@ -24,9 +25,9 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "white",
     fontSize: "20px",
-    marginLeft: theme.spacing(20),
+    marginLeft: theme.spacing(5),
     "&:hover": {
-      color: "yellow",
+      color: "white",
       borderBottom: "1px solid white",
     },
   },
@@ -41,31 +42,34 @@ function Navbar() {
     <AppBar position="static">
       <CssBaseline />
       <Toolbar>
-        <Typography variant="h4" className={classes.logo}>
+      <Typography variant="h4" className={classes.logo}>
         Interactive Art Gallery
-
         </Typography>
+
         {isMobile ? (
           <DrawerComponent />
         ) : (
           <div className={classes.navlinks}>
             <Link to="/" className={classes.link}>
-              Home
+              | Home
             </Link>
             <Link to="/01" className={classes.link}>
-              The Square
+              | The Square
             </Link>
             <Link to="/02" className={classes.link}>
-              The Circle
+              | The Circle
             </Link>
             <Link to="/03" className={classes.link}>
-              Moving Dots
+              | Moving Dots
             </Link>
             <Link to="/04" className={classes.link}>
-              Noise
+              | Noise
             </Link>
           </div>
         )}
+
+
+
       </Toolbar>
     </AppBar>
   );
