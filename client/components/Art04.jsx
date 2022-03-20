@@ -2,7 +2,6 @@ import React, {useEffect} from 'react'
 import canvasSketch from "canvas-sketch";
 import {Button} from "@material-ui/core";
 
-
 const random = require('canvas-sketch-util/random');
 const math = require('canvas-sketch-util/math');
 const Tweakpane = require('tweakpane');
@@ -10,7 +9,7 @@ const Tweakpane = require('tweakpane');
 function Art04 () {
 
   const settings = {
-    dimensions: [ 1080, 1080 ],
+    dimensions: [ 600, 600 ],
     animate: true
   };
   
@@ -28,6 +27,8 @@ function Art04 () {
   
   const sketch = () => {
     return ({ context, width, height, frame }) => {
+      
+      //GRID
       context.fillStyle = 'white';
       context.fillRect(0, 0, width, height);
   
@@ -43,6 +44,7 @@ function Art04 () {
       const margy = (height - gridh) * 0.5;
   
       for (let i = 0; i < numCells; i++) {
+      //CELL
         const col = i % cols;
         const row = Math.floor(i / cols);
   
@@ -50,7 +52,8 @@ function Art04 () {
         const y = row * cellh;
         const w = cellw * 0.8;
         const h = cellh *0.8;
-  
+      
+        //FRAME
         const f = params.animate ? frame : params.frame;
   
         // const n = random.noise2D(x + frame * 10, y, 0.001);
@@ -80,17 +83,19 @@ function Art04 () {
   };
   
   const createPane = () => {
-    const pane = new Tweakpane.Pane();
+    const pane = new Tweakpane.Pane({
+      container: document.getElementById('test'),
+    });
     let folder;
   
-    folder = pane.addFolder({ title: 'Grid', expanded: false});
+    folder = pane.addFolder({ title: 'Grid', expanded: true});
     folder.addInput(params, 'lineCap', {options: { butt: 'butt', round: 'round', square: 'square'}});
     folder.addInput(params, 'cols', {min: 2, max: 50, step: 1});
     folder.addInput(params, 'rows', {min: 2, max: 50, step: 1});
     folder.addInput(params, 'scaleMin', {min: 1, max: 100});
     folder.addInput(params, 'scaleMax', {min: 1, max: 100});
     
-    folder = pane.addFolder({ title: 'Noise', expanded: false });
+    folder = pane.addFolder({ title: 'Noise', expanded: true });
     folder.addInput(params, 'freq', { min: -0.01, max: 0.01 });
     folder.addInput(params, 'amp', { min: 0, max: 1 });
     folder.addInput(params, 'animate');
@@ -104,7 +109,7 @@ function Art04 () {
       ...settings,
       canvas: ref.current,
     });
-    createPane()
+    // createPane()
   }, [ref]);
   
   const configure = () => {
@@ -115,7 +120,8 @@ function Art04 () {
     <div className="grid-item">
       <h1>Noise</h1>
       <canvas ref={ref} />
-      {/* <Button variant="contained" style={{backgroundColor: "#B388FF",}} onClick={configure}>configure</Button> */}
+      <div id="test"></div>
+      <Button variant="contained" style={{backgroundColor: "#B388FF",}} onClick={configure}>configure</Button>
 
     </div>
   )

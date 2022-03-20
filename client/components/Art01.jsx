@@ -5,11 +5,12 @@ import {Button} from "@material-ui/core";
 function Art01 () {
 
   const settings = {
-    dimensions: [ 1000, 1000 ]
+    dimensions: [ 600, 600 ]
   };
   
   const sketch = () => {
     return ({ context, width, height }) => {
+      
       context.fillStyle = 'black';
       context.fillRect(0, 0, width, height);
       context.lineWidth = width * 0.01;
@@ -34,19 +35,17 @@ function Art01 () {
           context.rect(x, y, w, h);
           context.stroke();
                  
-      
           if (Math.random() > 0.5) {
             context.beginPath();
             context.rect(x + off / 2, y + off / 2, w - off, h - off)
-            context.stroke();
-                      
+            context.stroke();          
           }
         }
       }
     };
   };
 
-  const ref = React.createRef();
+  const ref = React.useRef();
   
   useEffect(() => {
     canvasSketch(sketch, {

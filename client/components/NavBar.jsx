@@ -42,10 +42,8 @@ function Navbar() {
     <AppBar position="static">
       <CssBaseline />
       <Toolbar>
-      <Typography variant="h4" className={classes.logo}>
-        Interactive Art Gallery
-        </Typography>
-
+        <Typography variant="h4" className={classes.logo}>Interactive Art Gallery</Typography>
+          
         {isMobile ? (
           <DrawerComponent />
         ) : (

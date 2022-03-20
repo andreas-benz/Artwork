@@ -6,17 +6,17 @@ const math = require('canvas-sketch-util/math')
 function Art03 () {
 
   const settings = {
-    dimensions: [ 1080, 1080 ],
+    dimensions: [ 600, 600 ],
     animate: true,
   };
   
-  const sketch = ({ context, width, height }) => {
+  const sketch = ({ width, height }) => {
     const agents = [];
   
     for (let i = 0; i < 40; i++) {
+      //CREATE DOTS (AGENTS)
       const x = random.range(0, width);
       const y = random.range(0, height);
-  
       agents.push(new Agent(x, y));
     }
   
@@ -104,7 +104,6 @@ function Art03 () {
     }
   }
 
- 
   const ref = React.createRef();
   useEffect(() => {
     canvasSketch(sketch, {

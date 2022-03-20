@@ -7,7 +7,7 @@ import {Button} from "@material-ui/core";
 function Art02 () {
 
   const settings = {
-    dimensions: [ 1080, 1080 ]
+    dimensions: [ 600, 600 ]
   };
   
   // const degToRad = (degrees) => {
