@@ -45,11 +45,11 @@ function Navbar() {
 
   const navLinks = {
     position: 'fixed',
-    left: '350px',
+    right: '50px',
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <CssBaseline />
       <Toolbar>
         
@@ -61,7 +61,7 @@ function Navbar() {
           </ul>
         ) : (
           <>
-          <Typography variant="h4" className={classes.logo}>Interactive Art Gallery</Typography>
+          <Typography style={TypographyStyle} variant="h4" className={classes.logo}>Interactive Art Gallery</Typography>
 
           <ul style={navLinks}>
             <li style={TypographyStyle}>
