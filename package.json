@@ -25,6 +25,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
     "canvas-sketch": "^0.7.5",

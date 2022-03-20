@@ -6,10 +6,13 @@ import Art01 from './Art01'
 import Art02 from './Art02'
 import Art03 from './Art03'
 import Art04 from './Art04'
+import NavBar from './NavBar'
 
-function App () {  
+function App () {
   return (
     <>
+    <NavBar />
+    
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path='/01' element={<Art01 />} />

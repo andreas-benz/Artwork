@@ -6,8 +6,7 @@ function Home () {
 
   return (
     <>
-    <h1>Interactive Art Gallery</h1>
-    <h2>Square</h2>
+    <h1>The Square</h1>
     <div className="grid-container">
       <div className="grid-item">
         <img src="/artpics/01/2022.03.12-14.16.31.png" />
@@ -25,7 +24,7 @@ function Home () {
       </div>
     </div>
 
-    <h2>Circle</h2>
+    <h1>The Circle</h1>
     <div className="grid-container">
       <div className="grid-item">
         <img src="/artpics/02/2022.03.19-18.40.47.png" />
@@ -43,7 +42,7 @@ function Home () {
       </div>
     </div>
 
-    <h2>Moving Dots</h2>
+    <h1>Moving Dots</h1>
     <div className="grid-container">
       <div className="grid-item">
         <video src="/artpics/03/2022.03.14-16.19.34.mp4" autoPlay muted loop />
@@ -61,7 +60,7 @@ function Home () {
       </div>
     </div>
 
-    <h2>Noise</h2>
+    <h1>Noise</h1>
     <div className="grid-container">
       <div className="grid-item">
         {/* <video src="/artpics/04/2022.03.19-19.28.32.mp4" autoPlay muted loop /> */}
