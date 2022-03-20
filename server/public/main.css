@@ -1,3 +1,23 @@
+html {
+  min-width: fit-content;
+  box-sizing: border-box;
+}
+
+.MuiIconButton-root {
+  color: white;
+  border-style: solid;
+}
+
+.MuiButtonBase-root {
+  color: white;
+  border-style: solid;
+}
+
+.hamburger {
+  color: white;
+  border-style: solid;
+}
+
 h1 {
   margin-top: 0px;
   margin-left: 20px;

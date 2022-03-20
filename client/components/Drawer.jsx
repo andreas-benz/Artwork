@@ -15,9 +15,23 @@ function DrawerComponent() {
 
   const [openDrawer, setOpenDrawer] = useState(false);
 
-  return (
+  const buttonStyle = {
+    color: 'white',
+    position: 'absolute',
+    left: '10px',
+    display: "inline",
+    float: 'left',
+  };
+  
+    return (
     <>
-      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
+      <IconButton style={buttonStyle} onClick={() => setOpenDrawer(!openDrawer)}>
+        <MenuIcon />
+      </IconButton>
+      <Drawer 
+        open={openDrawer} 
+        onClose={() => setOpenDrawer(false)}
+        >
         <List>
          <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
@@ -46,9 +60,7 @@ function DrawerComponent() {
           </ListItem>
         </List>
       </Drawer>
-      <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
-        <MenuIcon />
-      </IconButton>
+    
     </>
   );
 }
