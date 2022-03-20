@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react'
 import canvasSketch from "canvas-sketch";
+import {Button} from "@material-ui/core";
+
 
 const random = require('canvas-sketch-util/random');
 const math = require('canvas-sketch-util/math');
@@ -81,14 +83,14 @@ function Art04 () {
     const pane = new Tweakpane.Pane();
     let folder;
   
-    folder = pane.addFolder({ title: 'Grid'});
+    folder = pane.addFolder({ title: 'Grid', expanded: false});
     folder.addInput(params, 'lineCap', {options: { butt: 'butt', round: 'round', square: 'square'}});
     folder.addInput(params, 'cols', {min: 2, max: 50, step: 1});
     folder.addInput(params, 'rows', {min: 2, max: 50, step: 1});
     folder.addInput(params, 'scaleMin', {min: 1, max: 100});
     folder.addInput(params, 'scaleMax', {min: 1, max: 100});
     
-    folder = pane.addFolder({ title: 'Noise' });
+    folder = pane.addFolder({ title: 'Noise', expanded: false });
     folder.addInput(params, 'freq', { min: -0.01, max: 0.01 });
     folder.addInput(params, 'amp', { min: 0, max: 1 });
     folder.addInput(params, 'animate');
@@ -104,11 +106,17 @@ function Art04 () {
     });
     createPane()
   }, [ref]);
-    
+  
+  const configure = () => {
+    createPane()
+  }
+
   return (
     <div className="grid-item">
       <h1>Noise</h1>
       <canvas ref={ref} />
+      {/* <Button variant="contained" style={{backgroundColor: "#B388FF",}} onClick={configure}>configure</Button> */}
+
     </div>
   )
 }
